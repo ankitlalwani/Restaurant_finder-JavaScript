@@ -3,6 +3,17 @@
   --mainDark: #333333;
   --mainRed: #c92332;
 }
+h1 {
+  min-height: 1rem;
+  font-size: 2rem;
+}
+h1, h2, h3, h4, h5 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  line-height: 1.1em;
+  margin: calc(2rem - .05em) 0 1rem;
+  font-weight: 600;
+  padding: 0;
+}
 body {
   background: var(--mainWhite);
   color: var(--mainDark);
@@ -10,7 +21,7 @@ body {
 .redBtn {
   border-color: var(--mainRed);
   color: var(--mainRed);
-  background: transparent;
+  background: var(--mainWhite);
 }
 .redText {
   color: var(--mainRed);
@@ -34,4 +45,16 @@ body {
 }
 .showItem {
   display: block;
+}
+.h-city-home-title {
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  font-weight: 300!important;
+  text-rendering: optimizeLegibility;
+  font-size: 28px;
+  line-height: 1.3em;
+  padding: 0 15px 25px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+  color: #fff;
 }

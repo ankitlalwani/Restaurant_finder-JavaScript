@@ -14,7 +14,7 @@
 
  <!-- font awesome -->
  <link rel="stylesheet" href="css/all.css">
- <title>Grocery Item</title>
+ <title>Zomato App</title>
  <style>
  </style>
 </head>
@@ -22,18 +22,18 @@
 <body>
 
  <div class="container">
-  <div class="row">
+   <div class="zimagery" style="background-image: url(https://b.zmtcdn.com/images/foodshots/cover/pizza3.jpg?output-format=webp);; background-size:cover;">
+    <div class="row">
    <div class="col">
     <img src="img/zomato-logo.png" class="d-block mx-auto" alt="">
+    <h1 class="h-city-home-title">Find the best restaurants, cafes, and bars in Charlotte</h1>
     <div class="feedback alert alert-danger text-center text-capitalize">please enter city</div>
     <form id="searchForm" class="my-4">
      <!-- form group -->
      <div class="form-group my-3">
       <select class="custom-select text-capitalize" id="searchCategory">
-
-
       </select>
-     </div>
+     
      <!-- end of form group -->
 
      <!-- input group -->
@@ -42,22 +42,24 @@
       <div class="input-group-append">
        <button type="submit" class="btn redBtn text-capitalize">search</button>
       </div>
+      </div>
+      </div>
      </div>
      <!-- input group -->
 
-
     </form>
 
-    <img src="img/loader.gif" class="loader" alt="">
    </div>
   </div>
  </div>
  <!-- restaurant section -->
-
  <section class="py-5">
+
+ <img src="img/loader.gif" class="loader" alt="">
+
   <div class="container">
    <div class="row" id="restaurant-list">
-    <!-- item -->
+    <!-- item 
     <div class="col-11 mx-auto my-3">
      <div class="card">
       <div class="card">
@@ -98,7 +100,7 @@
       </div>
      </div>
 
-     <!-- item -->
+      item -->
 
     </div>
    </div>
