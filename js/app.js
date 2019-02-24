@@ -41,6 +41,7 @@ class ZOMATO {
         const restaurantJSON = await restaurantInfo.json();
         const restaurants = await restaurantJSON.restaurants;
 
+
         return {
             categories,
             cityID,
@@ -144,8 +145,31 @@ showRestaurant(img, name, address, aggregate_rating, cuisines, cost, menu_url, u
        <a href="${url}" target="_blank" class="btn redBtn  text-uppercase"><i class="fas fa-book"></i> website</a>
       </div>
      </div>
+     <div  class="row text-center no-gutters pb-3">
+     <div id="map" class="col-6">
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD04Qp0QECCMfjNjcPr4c1AQqxdUGMdFdY&callback=initMap"
+      async defer></script>
+     </div>
+     </div>
     </div>`;
+
     this.restaurantList.appendChild(div);
+
+    function initMap(){
+        var options = {
+            zoom: 8,
+            center: {lat: 42.3601, ing: -71.0589}
+        }
+        console.log("InitMap");
+        
+
+        var map = new google.maps.Map(document.getElementById('map', options));
+
+        var marker = new google.maps.Marker({
+            position: {lat: 42.3601, ing: -71.0589},
+            map
+        })
+    }
 }
 
 }
@@ -200,4 +224,5 @@ showRestaurant(img, name, address, aggregate_rating, cuisines, cost, menu_url, u
 
         }
     })
+    
 })();
